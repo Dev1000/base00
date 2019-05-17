@@ -1,0 +1,21 @@
+<% flash.each do |key, value| %>
+  <% if value != 'Signed in successfully.' %>
+    <% if key == 'notice' %>
+      <div class="alert alert-primary alert-dismissible fade show" role="alert"
+           style="position: absolute;z-index: 1030;width:400px;top:56px">
+        <%= value %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <% else %>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert"
+           style="position: absolute;z-index: 1030;width:300px">
+        <%= value %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>

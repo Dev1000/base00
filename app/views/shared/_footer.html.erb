@@ -1,0 +1,12 @@
+<footer style="position: fixed;left: 0;bottom: 0;width: 100%;border-top: solid 1px #eee;padding:16px">
+  <span class="type--fine-print">
+    <span class="update-year"></span>
+  </span>
+</footer>
+
+<script>
+  $(document).ready(function() {
+    const dt = new Date();
+    $('.update-year').html("Footer - " + dt.getFullYear())
+  });
+</script>
