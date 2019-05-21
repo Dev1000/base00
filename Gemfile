@@ -38,6 +38,8 @@ gem 'jquery-rails'
 
 gem 'devise', '~> 4.6', '>= 4.6.2'
 
+gem 'webpacker', '~> 4.0', '>= 4.0.2'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
